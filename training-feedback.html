@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Training Feedback Form</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="css/main.css" rel="stylesheet" />  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ui-controls.js"></script>
+</head>
+<body id="intr">
+    <div id="hidbg">
+        <div id="top_nav_search">
+            <div id="top_nav">
+            </div>
+            <div id="top_search">
+                <div id="search_form_box">
+                    <form action="/search" method="post" name="site_search" id="site_search">
+                        <div id="search_form_left">
+                            <input type="text" name="site_search_terms" id="site_search_terms" value="Keyword Search">
+                        </div>
+                        <div id="search_form_right">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="owrap">
+            <div id="wrap">
+                <div id="uq">
+                    <div id="logo">
+                    </div>
+                </div>
+                <div id="content" class="content_mod_2">
+                    <h1>Training Feedback Form</h1>
+                    <p><span>Thank you for taking the time to provide feedback regarding Backbone.js training that you have attended. Whether the training exceeded your expectations, met your expectations or needs improvement, we want to hear from you! Your feedback helps us determine what is working well throughout the state and identify areas where additional growth and support could help enrich the training experience for you as a training participant. All feedback is considered informal input and will not be responded to on an individual basis unless warranted.</span><br>
+                        <br>
+                        <span>Please take a moment to tell us about your most recent training experience. What's working well? How did the trainer meet your p!</span><br>
+                        <span>&nbsp;rofessional development needs and expectations? What would make it even better? Gathering this type of information will contribute to an improved and enhanced professional development system in Nevada.</span></p>
+                    <div id="inline_form">
+                        <form id="tf_form" name="tf_form" method="post" action="/util/submit_tff">
+                            <label>This Training:</label>
+                            <input type="radio" name="tff_fback" value="Exceeded My Expectations">
+                            Exceeded My Expectations<br>
+                            <input type="radio" name="tff_fback" value="Met My Expectations">
+                            Met My Expectations<br>
+                            <input type="radio" name="tff_fback" value="Did Not Meet My Expectations">
+                            Did Not Meet My Expectations<br>
+
+                            <label for="tff_why">Tell Us Why:</label>
+                            <textarea class="inf inline_txta" name="tff_why" id="tff_why"></textarea>
+
+                            <label>Did the training start on time?</label>
+                            <input type="radio" name="tff_ontime" value="Yes">
+                            Yes<br>
+                            <input type="radio" name="tff_ontime" value="No">
+                            No<br>
+
+                            <label>Did the training fill the allotted time?</label>
+                            <input type="radio" name="tff_atime" value="Yes">
+                            Yes<br>
+                            <input type="radio" name="tff_atime" value="No">
+                            No<br>
+
+                            <label>Did the content match what was advertised?</label>
+                            <input type="radio" name="tff_adv" value="Yes">
+                            Yes<br>
+                            <input type="radio" name="tff_adv" value="No">
+                            No<br>
+
+                            <label>Was the entire training focused on the advertised topic?</label>
+                            <input type="radio" name="tff_advt" value="Yes">
+                            Yes<br>
+                            <input type="radio" name="tff_advt" value="No">
+                            No<br>
+
+                            <label>Did you receive a Certificate of Completion with your name on it?</label>
+                            <input type="radio" name="tff_cert" value="Yes">
+                            Yes<br>
+                            <input type="radio" name="tff_cert" value="No">
+                            No<br>
+
+                            <label for="tff_qualities">List 3 positive qualities of the trainer.</label>
+                            <ol type="1">
+                                <li>
+                                    <input type="text" class="inf inline_txt tff_qualities" name="tff_qualities_1" id="tff_qualities_1" value=""></li>
+                                <li>
+                                    <input type="text" class="inf inline_txt tff_qualities" name="tff_qualities_2" id="tff_qualities_2" value=""></li>
+                                <li>
+                                    <input type="text" class="inf inline_txt tff_qualities" name="tff_qualities_3" id="tff_qualities_3" value=""></li>
+                            </ol>
+
+                            <label for="tff_apply">How will you apply what you learned to your job?</label>
+                            <textarea class="inf inline_txta" name="tff_apply" id="tff_apply"></textarea>
+
+                            <label for="tff_apply">If you answered 'No' to any of the questions above, please explain. You can also use this space to offer any additional feedback about this training experience.</label>
+                            <textarea class="inf inline_txta" name="tff_comments" id="tff_comments"></textarea>
+
+                            <div style="margin-bottom: 20px; margin-top: 20px;">
+                                Please provide your contact information below. Your name will be kept confidential and will not be shared with the trainer. You will be contacted by The Nevada Registry only in the event that more information/clarification is needed.
+                            </div>
+                            <label for="tff_name">Name:</label>
+                            <input type="text" class="inf inline_txt" name="tff_name" id="tff_name" value="">
+                            <a id="inline_submit" class="hand_cursor p24">
+                                <img src="/fb_site/images/btn-submit.png" width="115" height="39" alt="Submit Form"></a>
+
+                        </form>
+                    </div>
+                    <br class="clr">                    
+                    <script src="/fb_site/js/jquery.formatter.min.js"></script>
+                    <script src="/fb_site/js/moment.js"></script>                                                          
+                </div>
+
+                <br class="clr">
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
